@@ -1,5 +1,12 @@
+# main.py
+# This file contains the main program for a simple to-do list application.
+# The user can add, delete, and view items in a to-do list.
+#
+# I'm making this just to brush up on some python skills.
+
 import string
 import sys
+
 
 
 # Task: Represents a task.
@@ -22,6 +29,7 @@ class TaskList:
 
 
 
+# ******** START MAIN PROGRAM ******** #
 
 # User can add, delete, and view items in a to-do list.
 def main():
@@ -89,13 +97,13 @@ def main():
                     print(f"No task with ID {taskIdToDelete} found.\n")
                     enterToContinue()
 
+# ******** END MAIN PROGRAM ******** #
+
+
 
                 
 def enterToContinue():
     input("Press enter to continue...")
-
-
-
 
 
 
