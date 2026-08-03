@@ -4,10 +4,12 @@ import string
 # Task: Represents a task.
 #
 # description: Description of the task.
+# id: The id number of the task.
 class Task:
 
-    def __init__(self, description):
+    def __init__(self, description, id):
         self.description = description
+        self.id = id
 
 # TaskList: Represents the list of tasks.
 #
@@ -26,8 +28,10 @@ def main():
 
     taskList = []
 
-
     keepGoing = True
+    option: int # 1 = view list 
+                # 2 = add new task
+                # 3 = delete a task
 
     while keepGoing:
         print("********************\n")
@@ -36,6 +40,17 @@ def main():
         print("[2] Add new task")
         print("[3] Delete a task\n")
         print("********************\n")
+        print("\n")
+
+        option = input("Select an option: ")
+
+        match option:
+            # Print task list
+            case 1:
+                print("* TASK LIST: *\n")
+
+                for item in taskList:
+
 
 
 
